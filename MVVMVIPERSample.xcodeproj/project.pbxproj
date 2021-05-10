@@ -19,12 +19,16 @@
 		CA0FE02526317FC40047B2B7 /* GithubProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0FE02426317FC40047B2B7 /* GithubProvider.swift */; };
 		CA10CEC1262FDAC5009CFAC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CEC0262FDAC5009CFAC0 /* AppDelegate.swift */; };
 		CA10CEC3262FDAC5009CFAC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CEC2262FDAC5009CFAC0 /* SceneDelegate.swift */; };
-		CA10CEC5262FDAC5009CFAC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CEC4262FDAC5009CFAC0 /* ViewController.swift */; };
+		CA10CEC5262FDAC5009CFAC0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CEC4262FDAC5009CFAC0 /* HomeViewController.swift */; };
 		CA10CEC8262FDAC5009CFAC0 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA10CEC6262FDAC5009CFAC0 /* HomeViewController.storyboard */; };
 		CA10CECA262FDAC6009CFAC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA10CEC9262FDAC6009CFAC0 /* Assets.xcassets */; };
 		CA10CECD262FDAC6009CFAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA10CECB262FDAC6009CFAC0 /* LaunchScreen.storyboard */; };
 		CA10CED8262FDAC6009CFAC0 /* MVVMVIPERSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CED7262FDAC6009CFAC0 /* MVVMVIPERSampleTests.swift */; };
 		CA10CEE3262FDAC6009CFAC0 /* MVVMVIPERSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA10CEE2262FDAC6009CFAC0 /* MVVMVIPERSampleUITests.swift */; };
+		CA5FA3752644BB6D00F7CB66 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5FA3742644BB6D00F7CB66 /* HomeDetailViewController.swift */; };
+		CA5FA37D2644BB7700F7CB66 /* HomeDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5FA37C2644BB7700F7CB66 /* HomeDetailViewController.storyboard */; };
+		CA5FA38F2644C00E00F7CB66 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5FA38D2644C00E00F7CB66 /* ProfileCell.swift */; };
+		CA5FA3902644C00E00F7CB66 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5FA38E2644C00E00F7CB66 /* ProfileCell.xib */; };
 		E386508CA8ADA7B6CF9F7EED /* Pods_MVVMVIPERSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A72096DA2E5732931E8D1D66 /* Pods_MVVMVIPERSampleTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +68,7 @@
 		CA10CEBD262FDAC5009CFAC0 /* MVVMVIPERSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMVIPERSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA10CEC0262FDAC5009CFAC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA10CEC2262FDAC5009CFAC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA10CEC4262FDAC5009CFAC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA10CEC4262FDAC5009CFAC0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CA10CEC7262FDAC5009CFAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeViewController.storyboard; sourceTree = "<group>"; };
 		CA10CEC9262FDAC6009CFAC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA10CECC262FDAC6009CFAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +79,10 @@
 		CA10CEDE262FDAC6009CFAC0 /* MVVMVIPERSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMVIPERSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA10CEE2262FDAC6009CFAC0 /* MVVMVIPERSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMVIPERSampleUITests.swift; sourceTree = "<group>"; };
 		CA10CEE4262FDAC6009CFAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5FA3742644BB6D00F7CB66 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		CA5FA37C2644BB7700F7CB66 /* HomeDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetailViewController.storyboard; sourceTree = "<group>"; };
+		CA5FA38D2644C00E00F7CB66 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		CA5FA38E2644C00E00F7CB66 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
 		DE000CF96E64D99D51C4F9C3 /* Pods-MVVMVIPERSample-MVVMVIPERSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMVIPERSample-MVVMVIPERSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVMVIPERSample-MVVMVIPERSampleUITests/Pods-MVVMVIPERSample-MVVMVIPERSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FC9D6A466425E6D7BE94FE3D /* Pods-MVVMVIPERSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMVIPERSample.release.xcconfig"; path = "Target Support Files/Pods-MVVMVIPERSample/Pods-MVVMVIPERSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +140,7 @@
 		CA0FDFAD263027CC0047B2B7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CA5FA3732644BB5000F7CB66 /* HomeDetail */,
 				CA0FDFB0263027FC0047B2B7 /* Home */,
 			);
 			path = Scenes;
@@ -156,11 +165,12 @@
 		CA0FDFB0263027FC0047B2B7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CA5FA3812644BFB400F7CB66 /* Custom */,
 				CA0FDFB1263028250047B2B7 /* HomeInteractor.swift */,
 				CA0FDFBE263028460047B2B7 /* HomeRouter.swift */,
 				CA10CEC6262FDAC5009CFAC0 /* HomeViewController.storyboard */,
 				CA0FDFB9263028340047B2B7 /* HomeViewModel.swift */,
-				CA10CEC4262FDAC5009CFAC0 /* ViewController.swift */,
+				CA10CEC4262FDAC5009CFAC0 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,6 +251,24 @@
 				CA10CEE4262FDAC6009CFAC0 /* Info.plist */,
 			);
 			path = MVVMVIPERSampleUITests;
+			sourceTree = "<group>";
+		};
+		CA5FA3732644BB5000F7CB66 /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CA5FA3742644BB6D00F7CB66 /* HomeDetailViewController.swift */,
+				CA5FA37C2644BB7700F7CB66 /* HomeDetailViewController.storyboard */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		CA5FA3812644BFB400F7CB66 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				CA5FA38D2644C00E00F7CB66 /* ProfileCell.swift */,
+				CA5FA38E2644C00E00F7CB66 /* ProfileCell.xib */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		E5908FA5A37951FE49235A6C /* Pods */ = {
@@ -365,8 +393,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA10CECD262FDAC6009CFAC0 /* LaunchScreen.storyboard in Resources */,
+				CA5FA37D2644BB7700F7CB66 /* HomeDetailViewController.storyboard in Resources */,
 				CA10CECA262FDAC6009CFAC0 /* Assets.xcassets in Resources */,
 				CA10CEC8262FDAC5009CFAC0 /* HomeViewController.storyboard in Resources */,
+				CA5FA3902644C00E00F7CB66 /* ProfileCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,8 +524,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5FA38F2644C00E00F7CB66 /* ProfileCell.swift in Sources */,
+				CA5FA3752644BB6D00F7CB66 /* HomeDetailViewController.swift in Sources */,
 				CA0FE02526317FC40047B2B7 /* GithubProvider.swift in Sources */,
-				CA10CEC5262FDAC5009CFAC0 /* ViewController.swift in Sources */,
+				CA10CEC5262FDAC5009CFAC0 /* HomeViewController.swift in Sources */,
 				CA0FE0192631634E0047B2B7 /* GithubAPI.swift in Sources */,
 				CA0FDFBF263028460047B2B7 /* HomeRouter.swift in Sources */,
 				CA0FE01026315FEB0047B2B7 /* Github+Extension.swift in Sources */,

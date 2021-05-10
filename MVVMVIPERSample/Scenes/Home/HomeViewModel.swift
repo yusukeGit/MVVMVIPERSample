@@ -17,13 +17,12 @@ final class HomeViewModel {
     var profile: Profile {
         return _profile.value
     }
-    
-    private let _profile = BehaviorRelay<Profile>(value: Profile.init(login: "", url: URL(string: "")!, name: nil, email: nil))
+    private let _profile = BehaviorRelay<Profile>(value: Profile.init(login: "", url: URL(string: "au.com")!, name: "", email: ""))
     
     // observables
     var deselectRow: Observable<IndexPath>
     let reloadData: Observable<Void>
-    let transitionToUserDetail: Observable<Profile>
+    let transitionToHomeDetail: Observable<Profile>
     
     init(searchBarText: Observable<String?>,
          searchButtonClicked: Observable<Void>,
@@ -32,12 +31,14 @@ final class HomeViewModel {
         self.searchUserModel = searchUserModel
         self.deselectRow = itemSelected.map { $0 }
         self.reloadData = _profile.map { _ in }
-        self.transitionToUserDetail = itemSelected
+        self.transitionToHomeDetail = itemSelected
             .withLatestFrom(_profile) { ($0, $1) }
             .flatMap { indexPath, profile -> Observable<Profile> in
                 guard indexPath.row < profile.name?.count ?? 99 else {
+                    // onCompleted()と同じ
                     return .empty()
                 }
+                // onNext(profile), onCompleted()の省略形がjust
                 return .just(profile)
             }
         
@@ -51,9 +52,11 @@ final class HomeViewModel {
                 return me.searchUserModel
                     .fetchUser(query: query)
                     .materialize()
+                // materializeでObservable<Event<Element>>の形に変換
             }
             .share()
         
+        // 正常時の処理
         searchResponse
             .flatMap { event -> Observable<Profile> in
                 event.element.map(Observable.just) ?? .empty()
@@ -61,6 +64,7 @@ final class HomeViewModel {
             .bind(to: _profile)
             .disposed(by: disposeBag)
         
+        // エラーの処理
         searchResponse
             .flatMap { event -> Observable<Error> in
                 event.error.map(Observable.just) ?? .empty()
