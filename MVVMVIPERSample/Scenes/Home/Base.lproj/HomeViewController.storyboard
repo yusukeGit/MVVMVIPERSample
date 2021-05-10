@@ -16,18 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZT-Ts-0A4">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1uA-r9-Xrq">
+                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="j9N-8Q-cQc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2fA-6p-Q91"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-9E-qbo">
+                                <rect key="frame" x="0.0" y="94" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vXI-qA-lhS"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ROn-8W-GQa"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dZT-Ts-0A4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kNB-jl-5K8"/>
-                            <constraint firstItem="dZT-Ts-0A4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rnn-eZ-jRw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1uA-r9-Xrq" secondAttribute="trailing" id="6hy-3i-z4S"/>
+                            <constraint firstItem="1uA-r9-Xrq" firstAttribute="top" secondItem="ydN-9E-qbo" secondAttribute="bottom" id="8ae-4e-xsd"/>
+                            <constraint firstItem="1uA-r9-Xrq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CUG-t5-F8N"/>
+                            <constraint firstItem="ydN-9E-qbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E5B-A6-z8U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1uA-r9-Xrq" secondAttribute="bottom" id="Zmh-PD-PCf"/>
+                            <constraint firstItem="ydN-9E-qbo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hxa-aH-1NJ"/>
+                            <constraint firstItem="ydN-9E-qbo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="z2k-w8-uws"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="ydN-9E-qbo" id="aqB-EV-TD3"/>
+                        <outlet property="tableView" destination="1uA-r9-Xrq" id="yhq-6q-y4A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
