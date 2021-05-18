@@ -56,7 +56,7 @@ final class HomeViewModel {
             }
             .share()
         
-        // 正常時の処理
+        
         searchResponse
             .flatMap { event -> Observable<Profile> in
                 event.element.map(Observable.just) ?? .empty()
