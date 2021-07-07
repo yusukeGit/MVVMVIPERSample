@@ -1,1 +1,3 @@
 # MVVMVIPERSample
+
+MVVM+VIPERアーキテクチャのサンプルプロジェクト
